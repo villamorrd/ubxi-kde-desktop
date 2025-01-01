@@ -4,8 +4,8 @@ pkgver="0.0.1"
 source=("https://github.com/villamorrd/ubxi-kde-desktop.git#branch=develop")
 depends=("plasma-desktop" "konsole" "systemsettings" "plasma-nm" "plasma-disks"
   "plasma-firewall" "plasma-pa" "plasma-systemmonitor" "kinfocenter" "kmenuedit"
-  "kscreen" "kde-config-gtk-style" "kde-config-screenlocker" "breeze-gtk-theme" "xdg-desktop-portal-gtk"
-  "xdg-desktop-portal-kde")
+  "kscreen" "dolphin" "kde-config-gtk-style" "kde-config-screenlocker" "breeze-gtk-theme"
+  "xdg-desktop-portal-gtk" "xdg-desktop-portal-kde")
 pacdeps=("rhino-ubxi-core" "unicons-git")
 optdeps=(
   "kde-spectacle: a simple application for capturing desktop screenshots"
@@ -34,7 +34,7 @@ package() {
   install -Dm644 "rhino/logos/logo.svg" -t "${pkgdir}/usr/share/icons"
 
   # Wallpapers for Plasma
-  cp -r rhino/wallpapers "${pkgdir}/usr/share/wallpapers"
+  cp -r rhino/wallpapers "${pkgdir}/usr/share"
 
   # Plasma config
   install -Dm644 "plasma/kcm-about-distrorc" -t "${pkgdir}/etc/xdg"

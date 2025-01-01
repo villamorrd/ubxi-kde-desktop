@@ -21,6 +21,7 @@ license=('GPL-3.0-or-later')
 build() {
     cd "${gives}"
     mkdir -p "${pkgdir}/usr/share/icons"
+    mkdir -p "${pkgdir}/usr/share/wallpapers"
     mkdir -p "${pkgdir}/etc/xdg"
 }
 

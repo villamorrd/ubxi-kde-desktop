@@ -11,7 +11,7 @@ optdeps=(
   "ark: File archiver by KDE"
 )
 gives="ubxi-kde-desktop"
-replaces=("unicorn-desktop-git")
+replaces=("unicorn-desktop")
 priority='required'
 pkgdesc="UBXI KDE Plasma Desktop"
 maintainer=("villamorrd <villamorrd@students.nu-moa.edu.ph>")

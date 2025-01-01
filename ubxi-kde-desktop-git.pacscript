@@ -36,9 +36,10 @@ package() {
   # Wallpapers for Plasma
   cp -r rhino/wallpapers "${pkgdir}/usr/share"
 
-  # Plasma config
-  install -Dm644 "plasma/kcm-about-distrorc" -t "${pkgdir}/etc/xdg"
-
   # Plasma Global Theme
   cp -r plasma/look-and-feel/org.rhinolinux.unicorn.desktop "${pkgdir}/usr/share/plasma/look-and-feel"
+
+  # Plasma config
+  install -Dm644 "plasma/kcm-about-distrorc" -t "${pkgdir}/etc/xdg"
+  install -Dm644 "plasma/kdeglobals" -t "${pkgdir}/etc/xdg"
 }

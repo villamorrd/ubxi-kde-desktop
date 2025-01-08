@@ -10,6 +10,9 @@ pacdeps=("rhino-ubxi-core" "unicons-git")
 optdeps=(
   "kde-spectacle: a simple application for capturing desktop screenshots"
   "ark: File archiver by KDE"
+  "plasma-vault: Plasma applet and services for creating encrypted vaults"
+  "plasma-thunderbolt: Plasma addons for managing Thunderbolt devices"
+  "powerdevil: Global power saver settings"
 )
 gives="ubxi-kde-desktop"
 replaces=("unicorn-desktop")

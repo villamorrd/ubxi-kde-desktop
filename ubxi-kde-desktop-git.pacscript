@@ -5,7 +5,8 @@ source=("https://github.com/villamorrd/ubxi-kde-desktop.git#branch=develop")
 depends=("plasma-desktop" "konsole" "systemsettings" "plasma-nm" "plasma-disks"
   "plasma-firewall" "plasma-pa" "plasma-systemmonitor" "kinfocenter" "kmenuedit"
   "kscreen" "dolphin" "kdegraphics-thumbnailers" "kde-config-gtk-style" "kde-config-screenlocker"
-  "breeze-gtk-theme" "xdg-desktop-portal-gtk" "xdg-desktop-portal-kde")
+  "breeze-gtk-theme" "xdg-desktop-portal-gtk" "xdg-desktop-portal-kde" "ufw" "vulkantools"
+  "wayland-utils" "pulseaudio-utils" "aha" "clinfo")
 pacdeps=("rhino-ubxi-core" "unicons-git")
 optdeps=(
   "kde-spectacle: a simple application for capturing desktop screenshots"

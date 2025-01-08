@@ -4,8 +4,8 @@ pkgver="0.0.1"
 source=("https://github.com/villamorrd/ubxi-kde-desktop.git#branch=develop")
 depends=("plasma-desktop" "konsole" "systemsettings" "plasma-nm" "plasma-disks"
   "plasma-firewall" "plasma-pa" "plasma-systemmonitor" "kinfocenter" "kmenuedit"
-  "kscreen" "dolphin" "kde-config-gtk-style" "kde-config-screenlocker" "breeze-gtk-theme"
-  "xdg-desktop-portal-gtk" "xdg-desktop-portal-kde")
+  "kscreen" "dolphin" "kdegraphics-thumbnailers" "kde-config-gtk-style" "kde-config-screenlocker"
+  "breeze-gtk-theme" "xdg-desktop-portal-gtk" "xdg-desktop-portal-kde")
 pacdeps=("rhino-ubxi-core" "unicons-git")
 optdeps=(
   "kde-spectacle: a simple application for capturing desktop screenshots"

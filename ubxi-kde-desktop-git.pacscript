@@ -28,6 +28,7 @@ build() {
     mkdir -p "${pkgdir}/usr/share/icons"
     mkdir -p "${pkgdir}/usr/share/wallpapers"
     mkdir -p "${pkgdir}/usr/share/plasma/look-and-feel"
+    mkdir -p "${pkgdir}/usr/share/color-schemes"
     mkdir -p "${pkgdir}/etc/xdg"
 }
 
@@ -42,6 +43,9 @@ package() {
 
   # Plasma Global Theme
   cp -r plasma/look-and-feel/org.rhinolinux.unicorn.desktop "${pkgdir}/usr/share/plasma/look-and-feel"
+
+  # Unicorn color scheme
+  install -Dm644 "plasma/color-schemes/Unicorn.colors" "${pkgdir}/usr/share/color-schemes"
 
   # Plasma config
   install -Dm644 "plasma/kcm-about-distrorc" -t "${pkgdir}/etc/xdg"

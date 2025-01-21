@@ -133,6 +133,7 @@ ForegroundVisited=155,89,182
 [General]
 ColorScheme=BreezeDark
 Name=Unicorn
+TitlebarIsAccentColored=true
 shadeSortColumn=true
 
 [KDE]
